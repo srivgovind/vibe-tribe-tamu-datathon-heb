@@ -1,0 +1,14 @@
+# competition data (not redistributed)
+data/*.json
+
+# generated
+.cache/
+outputs/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# OS
+.DS_Store

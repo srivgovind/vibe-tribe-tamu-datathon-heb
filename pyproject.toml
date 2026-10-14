@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heb-ranker"
+version = "1.0.0"
+description = "Hybrid BM25 + sentence-embedding product search ranking (TAMU Datathon 2025, H-E-B challenge)"
+authors = [{ name = "Srivatsan Govindarajan" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "rank-bm25==0.2.2", "sentence-transformers>=2.7"]
+
+[project.urls]
+Repository = "https://github.com/srivgovind/vibe-tribe-tamu-datathon-heb"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
